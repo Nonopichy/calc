@@ -26,16 +26,21 @@ function mathinstring($ma){
 <html>
     <head>
       <meta charset="utf-8">
+      <!--Responsive-->
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <script>
+            <!--Add operation/number Display-->
             function addPainel(a){document.getElementById("result").setAttribute('value',document.getElementById("result").getAttribute("value")+a);}
+            <!--Clear Display-->
             function clearPainel(){document.getElementById("result").setAttribute('value'," ");}
         </script>
+     <!--Display With Buttons-->
     <h1>Calc in PHP, JS, CSS & HTML5</h1>
     <form action="" class="container">
+      <!--Get PHP result calc (display)-->
       <input type="text" value="<?php if(isset($_GET['calc'])){echo mathinstring($_GET['calc']);}?>" name="calc" id="result" class="result">
       <div class="second-row">
         <input type="button" onclick="addPainel(7)" value="7" class="global">
