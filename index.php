@@ -32,9 +32,9 @@ function mathinstring($ma){
     </head>
     <body>
         <script>
-            <!--Add operation/number Display-->
+            // Add operation/number Display
             function addPainel(a){document.getElementById("result").setAttribute('value',document.getElementById("result").getAttribute("value")+a);}
-            <!--Clear Display-->
+            // Clear Displa
             function clearPainel(){document.getElementById("result").setAttribute('value'," ");}
         </script>
      <!--Display With Buttons-->
